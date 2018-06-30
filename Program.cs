@@ -6,7 +6,8 @@ namespace chunking_benchmark
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var summary = BenchmarkDotNet.Running.BenchmarkRunner.Run<Benchmark>();
+            
         }
     }
 }
